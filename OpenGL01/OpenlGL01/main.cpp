@@ -6,6 +6,12 @@ using namespace std;
 
 void processInput(GLFWwindow *window);
 
+float vertices[] = {
+	-0.5f, -0.5f, 0.0f,
+	 0.5f, -0.5f, 0.0f,
+	 0.0f,  0.5f, 0.0f
+};
+
 int main()
 {
 	glfwInit();  //≥ı ºªØglfwø‚
@@ -34,6 +40,10 @@ int main()
 	}
 	
 	glViewport(0, 0, 800, 600);
+
+	//VAO
+	unsigned int VAO;
+	
 
 	while (!glfwWindowShouldClose(window))
 	{
